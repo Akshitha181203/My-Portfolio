@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshitha Peguda's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <script src="scripts.js"></script>
+    <div class="wrapper">
+        <div class="navBar">
+            Akshitha Peguda
+            <ul>
+                <li><a href="#aboutMe">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="modeToggle"></button>
+        </div>
+        <section id="header" class="header">
+            <h1>Hi, I'm Akshitha Peguda</h1>
+            Backend Developer and AI & Cybersecurity Enthusiast
+        </section>
+        <section id="aboutMe" class="aboutMe">
+            <h2>About me</h2>
+            I'm Akshitha Peguda, a Computer Science graduate from IIT Ropar, passionate about developing secure, scalable, and intelligent systems. My journey has been marked by a commitment to transforming complex challenges into robust solutions, whether it's optimizing backend performance or designing AI-driven cybersecurity simulators.
+        </section>
+        <!-- <section id="skills" class="skills">
+             add Animated skill bars on scroll (scroll events, animation frames) 
+            <h2>Skills</h2>
+                <ul>
+                    <li class="skill" id="skill-1">Programming Languages: Python, C, C++</li>
+                    <li class="skill" id="skill-2">Web Development: MERN, Django, Spring Boot</li>
+                    <li class="skill" id="skill-3">Databases: MySQL, PostgreSQL, MongoDB</li>
+                    <li class="skill" id="skill-4">Cloud & DevOps: AWS (EC2, RDS, S3), Docker</li>
+                    <li class="skill" id="skill-5">AI Tools: OpenAI, Phind, DeepSeek, Gemini, Llama</li>
+                    <li class="skill" id="skill-6">Tech Tools: Git, GitHub, LaTeX</li>
+                    <li class="skill" id="skill-7">Other Skills: Competitive Programming (Codechef, LeetCode), Web Development, Teamwork</li>
+                </ul>
+        </section> -->
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skill-bar-container">
+                <div class="skill-bar">
+                    <span>Programming Languages</span>
+                    <div class="bar"><div class="fill" data-width="90%">Python, C, C++</div></div>
+                </div>
+                <div class="skill-bar">
+                    <span>Web Development</span>
+                    <div class="bar"><div class="fill" data-width="85%">MERN, Django, Spring Boot</div></div>
+                </div>
+                <div class="skill-bar">
+                    <span>Databases</span>
+                    <div class="bar"><div class="fill" data-width="80%">MySQL, PostgreSQL, MongoDB</div></div>
+                </div>
+                <div class="skill-bar">
+                    <span>Cloud & DevOps</span>
+                    <div class="bar"><div class="fill" data-width="75%">AWS, Docker</div></div>
+                </div>
+                <div class="skill-bar">
+                    <span>AI Tools</span>
+                    <div class="bar"><div class="fill" data-width="70%">OpenAI, Gemini, Llama</div></div>
+                </div>
+                <div class="skill-bar">
+                    <span>Tech Tools</span>
+                    <div class="bar"><div class="fill" data-width="90%">Git, GitHub, LaTeX</div></div>
+                </div>
+                <div class="skill-bar">
+                    <span>Other Skills</span>
+                    <div class="bar"><div class="fill" data-width="85%">CP, Teamwork</div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiences" class="experiences">
+            <!-- Experience should have a horizontal scroll bar to show my experiences but for now i have only one and Modal popups for previews (event bubbling, overlay handling) -->
+            <h2>Experiences</h2> 
+            <div class="experience-scroll-container">
+                <div class="experience-card" data-role="model-trigger">
+                    <h3>CodeUnity</h3>
+                    <h4>Software Engineer</h4>
+                    <p><strong>Duration:</strong> May. 2024 - Aug. 2024 <br>
+                        <strong>Location:</strong> Remote <br>
+                        <strong>Tech Stack:</strong> backend - Spring Boot, EC2(Deployment); frontend - React.Js(user), Next.Js(admin), Tailwind, Vercel(deployment); database - MySQL, S3(document storage), RDS(AWS storage)
+                        <ul>
+                            <li>Worked as a Backend Development Intern, building and deploying backend for a production-grade matrimony platform.</li>
+                            <li>Collaborated within a team of 5 developers to design and implement secure, scalable features including profile discovery, user verification real-time admin controls, and JWT-based authentication with role-based access, enhancing platform security and user management.</li>
+                            <li>Led deployment efforts by configuring AWS EC2 instances and MySQL on RDS for reliable data persistence; integrated RESTful APIs with frontend clients (Next.js and React.js) using Axios, and deployed the frontend on Vercel, achieving a seamless and performant user experience.</li>
+                        </ul>
+                    </p>
+
+                </div>
+            </div>
+
+        </section>
+        <section id="projects" class="projects">
+            <!-- Projects should have automatic moving slide showing one at a time Modal popups for project previews (event bubbling, overlay handling) -->
+            <h2>Projects</h2>
+                <div class="project-slider-container">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-role="modal-trigger">
+                        <h3>LLM as an Attack Simulator</h3>
+                        <p>
+                        <strong>Instructor:</strong> Dr. Geeta Yadav<br>
+                        <strong>Duration:</strong> Jan 2025 – May 2025<br>
+                        <strong>GitHub:</strong> <a href="https://github.com/Akshitha181203/LLM-Attack-Simulator" target="_blank">View Repo</a><br>
+                        <strong>Tech Stack:</strong> Python, OpenAI/GPT-4, Word2Vec, TF-IDF, Cybersecurity Datasets
+                        </p>
+                        <ul>
+                        <li>Developed a modular framework for generating time-aligned MHMS cyberattack logs using LLMs.</li>
+                        <li>Created topology summarizer, attack interpreter, and log correlation modules.</li>
+                        <li>Evaluated log realism with Word2Vec & TF-IDF against OpenSSH & Hadoop logs (>98% similarity).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-role="modal-trigger">
+                        <h3>Portfolio Optimization using Deep Reinforcement Learning</h3>
+                        <p>
+                        <strong>Instructor:</strong> Dr. Shashi Shekhar Jha<br>
+                        <strong>Duration:</strong> Mar 2025 – May 2025<br>
+                        <strong>GitHub:</strong> <a href="https://github.com/Akshitha181203/PortfolioOptimization" target="_blank">View Repo</a><br>
+                        <strong>Tech Stack:</strong> Python, PyTorch, TRPO, PPO, RAC, NumPy, Pandas
+                        </p>
+                        <ul>
+                        <li>Designed a DRL-based system for risk-sensitive portfolio optimization with Sortino ratio rewards.</li>
+                        <li>Implemented TRPO, PPO with transformer encoder, and RAC for dynamic asset allocation.</li>
+                        <li>Simulated realistic markets with transaction costs and backtesting support.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-role="modal-trigger">
+                        <h3>CNN-based Binary Image Classifier</h3>
+                        <p>
+                        <strong>Instructor:</strong> Dr. Sudharshan Iyenger<br>
+                        <strong>Duration:</strong> Oct 2024 – Nov 2024<br>
+                        <strong>GitHub:</strong> <a href="https://github.com/Akshitha181203/CNN" target="_blank">View Repo</a><br>
+                        <strong>Tech Stack:</strong> Python, TensorFlow, Keras, NumPy, Pandas
+                        </p>
+                        <ul>
+                        <li>Trained a CNN to classify images from a custom binary dataset with 88.89% validation accuracy.</li>
+                        <li>Handled data preprocessing, model tuning, and performance evaluation.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card" data-role="modal-trigger">
+                        <h3>Linear Regressions on Student Performance</h3>
+                        <p>
+                        <strong>Instructor:</strong> Dr. Sudharshan Iyengar<br>
+                        <strong>Duration:</strong> Oct 2024 – Nov 2024<br>
+                        <strong>GitHub:</strong> <a href="https://github.com/Akshitha181203/Linear-Regressions-on-Student-Performance" target="_blank">View Repo</a><br>
+                        <strong>Tech Stack:</strong> Python, Scikit-Learn, Pandas, Matplotlib
+                        </p>
+                        <ul>
+                        <li>Predicted a performance index using engineered features like study hours, prior grades, and sleep.</li>
+                        <li>Achieved ~0.65 R² score and performed residual diagnostics and feature correlation analysis.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card" data-role="modal-trigger">
+                        <h3>CampusKart</h3>
+                        <p>
+                        <strong>Instructor:</strong> Dr. Puneet Goyal<br>
+                        <strong>Duration:</strong> Jan 2024 – May 2024<br>
+                        <strong>GitHub:</strong> <a href="https://github.com/Akshitha181203/CampusKart" target="_blank">View Repo</a><br>
+                        <strong>Tech Stack:</strong> Flutter, Django, PostgreSQL, Docker
+                        </p>
+                        <ul>
+                        <li>Built a cross-platform student marketplace with OTP login, dynamic search, and CRUD listings.</li>
+                        <li>Integrated backend APIs with secure authentication and in-app chat system.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card" data-role="modal-trigger">
+                        <h3>CauseCraft – NGO Hosting Platform</h3>
+                        <p>
+                        <strong>Instructor:</strong> Dr. SP Abhinandan<br>
+                        <strong>Duration:</strong> Jan 2024 – Apr 2024<br>
+                        <strong>GitHub:</strong> <a href="https://github.com/Akshitha181203/T02-CS305" target="_blank">View Repo</a><br>
+                        <strong>Tech Stack:</strong> React.js, Node.js, Express.js, MongoDB, AWS S3
+                        </p>
+                        <ul>
+                        <li>Developed a SaaS platform for NGOs with drag-drop site builder and role-based access.</li>
+                        <li>Enabled one-click deployment, volunteer-task management, and secure image hosting.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 7 -->
+                    <div class="project-card" data-role="modal-trigger">
+                        <h3>Tic Tac Toe with AI</h3>
+                        <p>
+                        <strong>Type:</strong> Personal Project<br>
+                        <strong>Duration:</strong> Dec 2022<br>
+                        <strong>GitHub:</strong> <a href="https://github.com/Akshitha181203/TicTacToe-minimax" target="_blank">View Repo</a><br>
+                        <strong>Tech Stack:</strong> Python, NumPy, Minimax Algorithm
+                        </p>
+                        <ul>
+                        <li>Built a terminal-based Tic Tac Toe AI using recursive Minimax with unbeatable logic.</li>
+                        <li>Used terminal UI and ensured optimal play with score back-propagation.</li>
+                        </ul>
+                    </div>
+</div>
+
+
+        </section>
+        <section id="certifications" class="certifications">
+            <!-- same as Projects -->
+            <h2>Certifications</h2>
+
+        </section>
+        <section id="resume" class="resume">
+            <h2>Resume</h2>
+            <!-- Button to download PDF and print resume (file handling, window.print()) [i have my resume in assets/documents/resume]-->
+            <button class="downloadResume">Download Resume</button>
+        </section>
+        <section id="contact" class="contact">
+            <!-- links and email, phonenumber are provided -->
+            <h2>Contact</h2>
+            linkedin
+            GitHub
+            email
+            phone number
+            instagram
+
+        </section>
+        <button class="scrollUp" aria-label="Scroll to top">
+            <a href="#header">&#8679;</a>
+        </button>
+
+</div>
+</body>
+</html>
