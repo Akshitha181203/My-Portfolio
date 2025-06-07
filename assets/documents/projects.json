@@ -1,0 +1,81 @@
+[
+  {
+    "title": "LLM as an Attack Simulator",
+    "instructor": "Dr. Geeta Yadav",
+    "duration": "Jan 2025 \u2013 May 2025",
+    "github": "https://github.com/Akshitha181203/LLM-Attack-Simulator",
+    "techStack": "Python, OpenAI/GPT-4, Word2Vec, TF-IDF, Cybersecurity Datasets",
+    "details": [
+      "Developed a modular framework for generating time-aligned MHMS cyberattack logs using LLMs.",
+      "Created topology summarizer, attack interpreter, and log correlation modules.",
+      "Evaluated log realism with Word2Vec & TF-IDF against OpenSSH & Hadoop logs (>98% similarity)."
+    ]
+  },
+  {
+    "title": "Portfolio Optimization using Deep Reinforcement Learning",
+    "instructor": "Dr. Shashi Shekhar Jha",
+    "duration": "Mar 2025 \u2013 May 2025",
+    "github": "https://github.com/Akshitha181203/PortfolioOptimization",
+    "techStack": "Python, PyTorch, TRPO, PPO, RAC, NumPy, Pandas",
+    "details": [
+      "Designed a DRL-based system for risk-sensitive portfolio optimization with Sortino ratio rewards.",
+      "Implemented TRPO, PPO with transformer encoder, and RAC for dynamic asset allocation.",
+      "Simulated realistic markets with transaction costs and backtesting support."
+    ]
+  },
+  {
+    "title": "CNN-based Binary Image Classifier",
+    "instructor": "Dr. Sudharshan Iyenger",
+    "duration": "Oct 2024 \u2013 Nov 2024",
+    "github": "https://github.com/Akshitha181203/CNN",
+    "techStack": "Python, TensorFlow, Keras, NumPy, Pandas",
+    "details": [
+      "Trained a CNN to classify images from a custom binary dataset with 88.89% validation accuracy.",
+      "Handled data preprocessing, model tuning, and performance evaluation."
+    ]
+  },
+  {
+    "title": "Linear Regressions on Student Performance",
+    "instructor": "Dr. Sudharshan Iyengar",
+    "duration": "Oct 2024 \u2013 Nov 2024",
+    "github": "https://github.com/Akshitha181203/Linear-Regressions-on-Student-Performance",
+    "techStack": "Python, Scikit-Learn, Pandas, Matplotlib",
+    "details": [
+      "Predicted a performance index using engineered features like study hours, prior grades, and sleep.",
+      "Achieved ~0.65 R\u00b2 score and performed residual diagnostics and feature correlation analysis."
+    ]
+  },
+  {
+    "title": "CampusKart",
+    "instructor": "Dr. Puneet Goyal",
+    "duration": "Jan 2024 \u2013 May 2024",
+    "github": "https://github.com/Akshitha181203/CampusKart",
+    "techStack": "Flutter, Django, PostgreSQL, Docker",
+    "details": [
+      "Built a cross-platform student marketplace with OTP login, dynamic search, and CRUD listings.",
+      "Integrated backend APIs with secure authentication and in-app chat system."
+    ]
+  },
+  {
+    "title": "CauseCraft \u2013 NGO Hosting Platform",
+    "instructor": "Dr. SP Abhinandan",
+    "duration": "Jan 2024 \u2013 Apr 2024",
+    "github": "https://github.com/Akshitha181203/T02-CS305",
+    "techStack": "React.js, Node.js, Express.js, MongoDB, AWS S3",
+    "details": [
+      "Developed a SaaS platform for NGOs with drag-drop site builder and role-based access.",
+      "Enabled one-click deployment, volunteer-task management, and secure image hosting."
+    ]
+  },
+  {
+    "title": "Tic Tac Toe with AI",
+    "instructor": "Personal Project",
+    "duration": "Dec 2022",
+    "github": "https://github.com/Akshitha181203/TicTacToe-minimax",
+    "techStack": "Python, NumPy, Minimax Algorithm",
+    "details": [
+      "Built a terminal-based Tic Tac Toe AI using recursive Minimax with unbeatable logic.",
+      "Used terminal UI and ensured optimal play with score back-propagation."
+    ]
+  }
+]

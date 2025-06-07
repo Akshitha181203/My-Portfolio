@@ -1,0 +1,26 @@
+.experience-scroll-container {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.experience-card {
+  min-width: 300px;
+  max-width: 400px;
+  background-color: var(--primary-color);
+  /* color: var(--bg-color); */
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: scale(1.03);
+}
