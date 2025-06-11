@@ -1,14 +1,17 @@
+import { renderExperiences } from "./components/experience/component.js";
+import { renderProjects } from "./components/projects/component.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("theme-toggle");
   const body = document.body;
   const fillBars = document.querySelectorAll(".fill");
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('navLinks');
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
 
   // Apply hamburger menu
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navLinks.classList.toggle('active');
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
   });
 
   // Apply saved theme
@@ -31,18 +34,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Animate skill bars on scroll
-  function animateBars() {
-    fillBars.forEach((bar) => {
-      const rect = bar.getBoundingClientRect();
-      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-      if (isVisible && !bar.classList.contains("animated")) {
-        bar.style.width = bar.dataset.width;
-        bar.classList.add("animated");
-      }
-    });
-  }
+  renderExperiences("experiences");
+  renderProjects("projects");
+  const skillBars = document.querySelectorAll(".fill");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const fill = entry.target;
+          fill.style.width = fill.dataset.width;
+          observer.unobserve(fill);
+        }
+      });
+    },
+    { threshold: 0.6 }
+  );
 
-  window.addEventListener("scroll", animateBars);
-  animateBars();
+  skillBars.forEach((bar) => observer.observe(bar));
 });

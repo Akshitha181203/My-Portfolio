@@ -1,8 +1,8 @@
 :root {
   --bg-color: #f8f9fa;
   --text-color: #1b1f22;
-  --primary-color: #1c2541; /* Navy */
-  --accent-color: #d4af37;  /* Gold */
+  --primary-color: #1c2541; 
+  --accent-color: #d4af37;  
   --nav-bg: #ffffff;
   --contrast-blur: #d4af37;
   --card-bg: rgba(255, 255, 255, 0.9);

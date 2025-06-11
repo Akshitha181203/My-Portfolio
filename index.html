@@ -13,10 +13,10 @@
     />
   </head>
   <body>
-    <script src="/script.js"></script>
+    <script type="module" src="./script.js"></script>
     <div class="wrapper">
       <nav class="navBar">
-        <div class="navBrand">Akshitha Peguda</div>
+        <div class="navBrand">Akshitha Peguda.</div>
 
         <div class="hamburger" id="hamburger">
           <span></span>
@@ -43,7 +43,7 @@
         <div class="hero-content">
           <div class="hero-text">
             <h1>Hi, I'm Akshitha Peguda</h1>
-            <p>Backend Developer and AI & Cybersecurity Enthusiast</p>
+            <p>Software Developer and AI & Cybersecurity Enthusiast</p>
           </div>
           <div class="hero-image">
             <img src="assets/images/akshitha.jpg" alt="Akshitha Peguda" />
@@ -219,28 +219,5 @@
         <a href="#header">&#8679;</a>
       </button>
     </div>
-
-    <script type="module">
-      import { renderExperiences } from "./components/experience/component.js";
-      import { renderProjects } from "./components/projects/component.js";
-      renderExperiences("experiences");
-      renderProjects("projects");
-
-      const skillBars = document.querySelectorAll(".fill");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              const fill = entry.target;
-              fill.style.width = fill.dataset.width;
-              observer.unobserve(fill);
-            }
-          });
-        },
-        { threshold: 0.6 }
-      );
-
-      skillBars.forEach((bar) => observer.observe(bar));
-    </script>
   </body>
 </html>
